@@ -1,0 +1,12 @@
+package test;
+
+import javax.swing.JOptionPane;
+
+public class DrawPanelTest 
+{
+	public static void main(String args[])
+	{
+		JOptionPane.showInternalOptionDialog(parentComponent, message, title, optionType, messageType, icon, options, initialValue)log(parentComponent, message, title, optionType, messageType, icon, options, initialValue);
+
+	}
+}

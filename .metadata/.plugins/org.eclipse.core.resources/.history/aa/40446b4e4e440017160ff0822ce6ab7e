@@ -1,0 +1,44 @@
+package test;
+
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+
+public class SelectionPanel extends JPanel
+{
+	public void paintComponent()
+	{
+		// call paintComponent to ensure the panel displays correctly
+
+		JButton buttonOK = new JButton("OK");
+		
+		JRadioButton r1 = new JRadioButton("1");
+		JRadioButton r2 = new JRadioButton("2");
+		
+		ButtonGroup group = new ButtonGroup();
+		group.add(r1);
+		group.add(r2);
+		
+		buttonOK.addActionListener(new ActionListener() 
+		{
+			@Override
+			public void actionPerformed(ActionEvent event) 
+			{
+				System.out.println("wer");
+				
+			}
+		});
+
+				
+
+		this.add(r1);
+		this.add(r2);
+		this.add(buttonOK);
+	
+	}
+}

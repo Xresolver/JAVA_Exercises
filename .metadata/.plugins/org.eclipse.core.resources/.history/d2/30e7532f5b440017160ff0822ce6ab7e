@@ -1,0 +1,28 @@
+package exemples;
+
+import java.awt.Graphics;
+import javax.swing.JPanel;
+
+public class PanelExamples extends JPanel
+{
+	private String design;
+	
+	public PanelExamples(String design)
+	{
+		this.design = design;
+	}
+	
+	public void paintComponent(Graphics g)
+	{
+		super.paintComponent(g);
+		int width = getWidth(); 
+		int height = getHeight();
+		
+		switch design
+		{
+			case "Panel Example-01":
+		}
+		
+	}
+
+}

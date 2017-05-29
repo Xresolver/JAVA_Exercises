@@ -1,0 +1,20 @@
+package exemples;
+
+import java.awt.Graphics;
+import javax.swing.JPanel;
+
+public class PanelExamples extends JPanel
+{
+	private int whichDesign;
+	
+	public PanelExamples(int whichDesign)
+	{
+		this.whichDesign = whichDesign;
+	}
+	
+	public void paintComponent(Graphics g)
+	{
+		
+	}
+
+}
