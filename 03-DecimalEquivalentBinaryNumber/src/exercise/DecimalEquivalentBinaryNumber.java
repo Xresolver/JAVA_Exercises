@@ -9,7 +9,6 @@ public class DecimalEquivalentBinaryNumber
 	public static void main(String args[])
 	{
 		long binaryNumber;
-		int decimalNumber;
 		Scanner binaryInput = new Scanner(System.in);
 		
 		try
