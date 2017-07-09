@@ -26,7 +26,7 @@ public class Circles extends JPanel
 					(startPoint_y - i*RADIUS), 
 					2*(RADIUS + i*10), 
 					2*(RADIUS + i*10)
-					);
+				   );
 		
 	}
 }
