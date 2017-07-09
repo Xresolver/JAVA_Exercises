@@ -25,7 +25,11 @@ This Program find and show pythagorean triples that length of sides are less tha
 This program print a diamond of asterisks which have length user want.<br/><br/>
 
 <b>08-Bull’s_Eye: </b><br/>
-<br/><br/>
+Using method fillOval , draw a bull’s-eye that alternates between two random colors<br/><br/>
 
 <b>09-Random_Filled_Shapes: </b><br/>
-<br/><br/>
+draws 10 random filled shapes in random colors, positions and sizes<br/><br/>
+
+<b>10-Greatest_Common_Divisor: </b><br/>
+reads two values from the user, calculate GCD of these numbers and display result. <br/>
+This program use Euclid's Alorithm<br/><br/>
