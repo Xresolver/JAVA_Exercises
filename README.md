@@ -33,3 +33,6 @@ draws 10 random filled shapes in random colors, positions and sizes<br/><br/>
 <b>10-Greatest_Common_Divisor: </b><br/>
 reads two values from the user, calculate GCD of these numbers and display result. <br/>
 This program use Euclid's Alorithm<br/><br/>
+
+<b>11-Drawing_Spirals: </b><br/>
+draws spirals with methods drawLine and drawArc<br/><br/>

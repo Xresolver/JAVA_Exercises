@@ -1,4 +1,6 @@
-package test;
+/*
+ * This class create a panel that include 2 selection button
+ */
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,33 +11,26 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
-import exemples.PanelExamples;
-
-public class SelectionPanel extends JPanel
+public class SpiralSelection extends JPanel
 {	
 	private String selectedRadioButton = new String();
 	
-	public SelectionPanel()
+	public SpiralSelection()
 	{
 		
-		JRadioButton r1 = new JRadioButton("Panel Example-01");
-		JRadioButton r2 = new JRadioButton("Panel Example-02");
-		JRadioButton r3 = new JRadioButton("Panel Example-03");
-		JRadioButton r4 = new JRadioButton("Panel Example-04");
+		JRadioButton r1 = new JRadioButton("Spiral-01");
+		JRadioButton r2 = new JRadioButton("Spiral-02");
+
 	
 		JButton buttonOK = new JButton("OK");
 		
 		ButtonGroup group = new ButtonGroup();
 		group.add(r1);
 		group.add(r2);
-		group.add(r3);
-		group.add(r4);
 
-//		this.add(r1);
-//		this.add(r2);
-//		this.add(r3);
-//		this.add(r4);
-//		this.add(buttonOK);
+		this.add(r1);
+		this.add(r2);
+		this.add(buttonOK);
 	
 		buttonOK.addActionListener
 		(
@@ -48,12 +43,9 @@ public class SelectionPanel extends JPanel
 						selectedRadioButton = r1.getText();
 					else if(r2.isSelected())
 						selectedRadioButton = r2.getText();
-					else if(r3.isSelected())
-						selectedRadioButton = r3.getText();
-					else if(r4.isSelected())
-						selectedRadioButton = r4.getText();
+
 					
-					PanelExamples panel = new PanelExamples(selectedRadioButton);
+					Spiral spiral = new Spiral(selectedRadioButton);
 					
 					// create a new frame to hold the panel
 					JFrame application = new JFrame();
@@ -61,9 +53,9 @@ public class SelectionPanel extends JPanel
 					// set the frame to exit when it is closed
 					application.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 					
-					application.add(panel); // add the panel to the frame
-					application.setSize(250, 250); // set the size of the frame
-					application.setVisible(true); // make the frame visible	
+					application.add(spiral); 		// add a spiral to the frame
+					application.setSize(250, 250); 	// set the size of the frame
+					application.setVisible(true); 	// make the frame visible	
 					
 				
 				}
