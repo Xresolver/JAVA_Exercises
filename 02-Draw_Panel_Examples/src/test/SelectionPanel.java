@@ -31,11 +31,11 @@ public class SelectionPanel extends JPanel
 		group.add(r3);
 		group.add(r4);
 
-//		this.add(r1);
-//		this.add(r2);
-//		this.add(r3);
-//		this.add(r4);
-//		this.add(buttonOK);
+		this.add(r1);
+		this.add(r2);
+		this.add(r3);
+		this.add(r4);
+		this.add(buttonOK);
 	
 		buttonOK.addActionListener
 		(

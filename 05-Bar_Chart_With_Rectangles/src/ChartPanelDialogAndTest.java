@@ -20,7 +20,6 @@ public class ChartPanelDialogAndTest
 			/* convert and hold data as integer */
 			chartDatas[i] = Integer.parseInt(sNumber[i]);
 		}
-		System.out.println(sNumber.length);
 		
 		ChartPanel chartPanel = new ChartPanel(chartDatas);
 		

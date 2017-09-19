@@ -22,19 +22,12 @@ public class Circles extends JPanel
 		
 		for(int i = 0; i < 12; i++)
 			g.drawOval(
-<<<<<<< HEAD
+
 						(upperLeft_x - i*RADIUS), 
 						(upperLeft_y - i*RADIUS), 
 						2*(RADIUS + i*10), 
 						2*(RADIUS + i*10)
 					  );
-=======
-					(startPoint_x - i*RADIUS), 
-					(startPoint_y - i*RADIUS), 
-					2*(RADIUS + i*10), 
-					2*(RADIUS + i*10)
-				   );
->>>>>>> 36b621206adcc2c068159e2ff304c6d9b7ac1950
 		
 	}
 }

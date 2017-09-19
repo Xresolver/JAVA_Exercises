@@ -19,7 +19,6 @@ public class ChartPanel extends JPanel
 	{
 		super.paintComponent(g);
 		
-		int width = getWidth(); // total width
 		int height = getHeight(); // total height
 		
 		int startPoint_x = 20;
