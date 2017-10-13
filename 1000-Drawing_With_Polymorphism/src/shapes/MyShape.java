@@ -1,19 +1,18 @@
 package shapes;
 
-//MyLine class represents a line.
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class MyLine
+public abstract class MyShape 
 {
 	private int x1; // x-coordinate of first endpoint
 	private int y1; // y-coordinate of first endpoint
 	private int x2; // x-coordinate of second endpoint
 	private int y2; // y-coordinate of second endpoint
-	private Color color; // color of this line
-	
+	private Color color; // color of this shape
+
 	// constructor with no arguments
-	public MyLine()
+	public MyShape()
 	{
 		this.x1 	= 0;
 		this.x2		= 0;
@@ -22,9 +21,8 @@ public class MyLine
 		this.color  = Color.BLACK;
 	}
 	
-	
 	// constructor with input values
-	public MyLine(int x1, int y1, int x2, int y2, Color color)
+	public MyShape(int x1, int y1, int x2, int y2, Color color)
 	{
 		this.x1 = cordinateValidator(x1);	
 		this.x2 = cordinateValidator(x2);
@@ -32,7 +30,7 @@ public class MyLine
 		this.y2 = cordinateValidator(y2);
 		this.color = color;
 	}
-
+	
 	public void setX1(int x1){	this.x1 = cordinateValidator(x1);	}
 	
 	public void setX2(int x2){	this.x2 = cordinateValidator(x2);	}
@@ -61,11 +59,6 @@ public class MyLine
 			return coordinate;
 	}
 	
-	// Draw the line in the specified color
-	public void draw(Graphics g)
-	{
-		g.setColor(getColor());
-		g.drawLine(getX1(), getX2(), getY1(), getY2());
-	}
-
-} // end class MyLine
+	// Draw the shape
+	public abstract void draw(Graphics g);
+}

@@ -12,6 +12,8 @@ public class TestDraw
 	public static void main(String[] args)
 	{
 		DrawPanel panel = new DrawPanel();
+		// JLabel as a status bar that displays counts 
+		// representing the number of each shape displayed.
 		JLabel staus = new JLabel(panel.getStatus());
 		
 		JFrame app = new JFrame();

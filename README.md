@@ -42,6 +42,6 @@ Can the knight piece move around an empty chess-board and touch each of the 64 s
 We study this intriguing problem with different approaches.<br/><br/>
 
 <b>0900-Using_Objects_With_Graphics: </b><br/>
-Create a set of shape classes that store information about each shape. <br/>
+Create a set of shape classes  that store information about each shape by using polymorphic behavior. <br/>
 Class DrawPanel , which will generate random objects of class MyLine, MyOval and MyRectangle.</br>
 Class TestDraw in test package sets up a new window to display our drawings.<br/><br/>
